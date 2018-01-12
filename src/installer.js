@@ -227,7 +227,7 @@ function copyScripts (options, dir) {
  */
 function createBinary (options, dir) {
   const binDir = path.join(dir, 'usr/bin')
-  const binSrc = path.join('../lib', options.name, options.bin)
+  const binSrc = path.join('../lib', options.name, "app")
   const binDest = path.join(binDir, options.name)
   options.logger(`Symlinking binary from ${binSrc} to ${binDest}`)
 
